@@ -1,0 +1,585 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.0.0 
+Created: August 2014
+License URI: http://wrapbootstrap.com
+File Description: Place here your custom CSS styles
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+/*----bootstrap css ----- */
+/*----font awesome -------*/
+@import url('../fonts/font-awesome/css/font-awesome.min.css');
+/*----revolution-slider---*/
+@font-face {
+    font-family: 'garavabold_italic';
+    src: url('../fonts/web/garava_bold_italic.woff2') format('woff2'),
+         url('../fonts/web/garava_bold_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavabold';
+    src: url('../fonts/web/garava_bold.woff2') format('woff2'),
+         url('../fonts/web/garava_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavaheavy';
+    src: url('../fonts/web/garava_heavy.woff2') format('woff2'),
+         url('../fonts/web/garava_heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavaitalic';
+    src: url('../fonts/web/garava_italic.woff2') format('woff2'),
+         url('../fonts/web/garava_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavaregular';
+    src: url('../fonts/web/garava_regular.woff2') format('woff2'),
+         url('../fonts/web/garava_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quintessentialregular';
+    src: url('../fonts/web/quintessential-regular.woff2') format('woff2'),
+         url('../fonts/web/quintessential-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*** 
+
+====================================================================
+  Global Settings
+====================================================================
+
+ ***/
+
+ @font-face {
+  font-family: 'font-awesome';
+  src: url('../fonts/font-awesome/fonts/fontawesome-webfont.ttf');
+  src: url('../fonts/font-awesome/fonts/fontawesome-webfont.eot'), /* IE9 Compat Modes */
+       url('../fonts/font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
+ }
+ 
+.main-page-wrapper {
+  overflow-x:hidden;
+}
+ h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
+ .mellowTitle {color:#292929; text-transform: uppercase;font-weight: 700; font-family: 'garavaregular';  letter-spacing:0.5px;}
+ h1 { font-family: 'garavaregular';}
+ ul {list-style-type: none;}
+
+
+
+.clear-fix { clear:both;}
+.clear-fix:after {
+  display: table;
+  content: '';
+  clear: both;
+ }
+.tran3s,.meditation-menu .navbar-nav>li a
+{
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+ }
+.tran4s{
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+       -o-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+ }
+.float-left {float:left;}
+.float-right {float:right;}
+.round-border {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+.mellow-title {
+  text-align: center;
+  margin: 95px 0 0 0;
+}
+.mellow-title h2 {
+  position: relative;
+}
+.mellow-title h2:before {
+  content: '';
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -12px;
+}
+.mellow-title p {
+  font-size: 16px;
+  width: 75%;
+  margin: 60px auto 0 auto;
+}
+.p-color,.meditation-menu .navbar-nav>li.active>a,
+.meditation-menu .navbar-nav>li>a:hover,#about-us .single-about-content:hover h5 a,
+#service-section .single-service-content:hover .icon-heading .icon,
+#service-section .single-service-content:hover .icon-heading h6 a,
+#pricing-section .single-price-table a:hover,#blog-section .single-news-item .img a,
+#blog-section .single-news-item:hover .post p a,#blog-section .single-news-item .post h6:hover a,
+#contact-section .contact-address-content .left-side ul li:hover .icon,
+#contact-section .send-message form button:hover,.inner-page-banner .content ul li:last-child,
+.blog-details-page aside .sidebar-news-list ul li a i,.monthly-header-title,
+.blog-details-page aside .sidebar-news-list ul li a:hover,.blog-details-page aside .sidebar-archives ul li a i,
+.blog-details-page aside .sidebar-archives ul li a:hover,.blog-details-page aside .sidebar-archives ul li a.active,
+.blog-details-page aside .sidebar-news-list ul li a.active,.recent-single-post .post a:hover,
+.sidebar-tags ul li a:hover,.blog-details-post-wrapper .list-img-wrapper ul li a i,
+.blog-details-post-wrapper .list-img-wrapper ul li a:hover,.blog-details-post-wrapper .post-comment form button:hover,
+.blog-details-post-wrapper .post-share-area .share li a:hover,.meditation-menu.navbar .nav>li ul li a:hover,
+.blog-details-post-wrapper .post-share-area .share li a.active {
+  color:#6B61AD;
+}
+.p-color-bg,.mellow-title h2:before, #skill-section .codeconSkillbar .skillBar,#our-client .owl-mellow .owl-dots .owl-dot.active span,
+#our-client .owl-mellow .owl-dots .owl-dot:hover span,
+.blog-details-post-wrapper .comment-area .single-comment .comment button:hover {
+  background:#6B61AD;
+}
+
+.banner .project-button,#about-us .icon,#about-us .single-about-content a.more,
+#service-section .single-service-content:hover,#project-section .project-menu ul li.active,
+#project-section .project-menu ul li:hover,.cont-sec .content a,
+#team-section .team-member-wrapper .single-team-member .img .content h4,#pricing-section .single-price-table a,
+#our-client .owl-mellow .owl-dots .owl-dot.active span, #our-client .owl-mellow .owl-dots .owl-dot:hover span,
+#contact-section .contact-address-content .left-side ul li .icon,#contact-section .send-message form button,
+.sidebar-tags ul li a:hover,.blog-details-post-wrapper .post-comment form button,
+.blog-details-post-wrapper .post-comment textarea:focus,.blog-details-post-wrapper .post-comment input:focus {
+  border-color:#6B61AD;
+  border-style: solid;
+}
+/*** 
+
+====================================================================
+  mellow Header
+====================================================================
+
+ ***/.logo img {
+    width: 100%;
+    height: auto;
+}
+.meditation-header {
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 999;
+  padding-top: 20px;
+}
+.meditation-menu .navbar-nav>li>a {
+  text-transform: uppercase;
+  color:#000;
+  font-weight: 700;
+  background: transparent;
+  padding: 9px 15px;
+} 
+.meditation-menu .navbar-nav>li:last-child>a {
+  padding-right: 0;
+}
+.meditation-menu.navbar {
+  border:none;
+  margin: 0;margin: 23px 0 0 0;
+}
+
+.meditation-menu.navbar .nav>li ul.sub-menu {
+    z-index: 10;
+  position: absolute;
+  background: #1e1e1e;
+  width:150px;
+  top:120%;
+  top:calc(100% + 60px);
+  left:0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0px 13px 25px -12px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 13px 25px -12px rgba(0,0,0,0.15);
+  box-shadow: 0px 13px 25px -12px rgba(0,0,0,0.15);
+}
+.meditation-menu.navbar .nav>li ul li a {
+  line-height: 40px;
+  color:#fff;
+  font-weight: 700;
+  padding: 0 0 0 15px;
+  display: block;
+}
+.meditation-menu.navbar .nav>li ul li:last-child a {
+  border:none;
+}
+.meditation-menu.navbar .nav>li:hover ul.sub-menu {
+  top:100%;
+  opacity: 1;
+  visibility: visible;
+}
+.meditation-menu .navbar-toggle {
+    margin: 0;
+    border-radius: 0;
+    color: #fff;
+    padding-right: 15px;
+    background: #333;
+    margin-right: 10px;
+}
+.meditation-menu .navbar-toggle .fa {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.meditation-menu .navbar-nav {
+  margin: 0;
+}
+.meditation-header li.dropdown-holder .fa {
+  position: absolute;
+  top:0;
+  right: 0;
+  text-align: center;
+  width: 45px;
+  color:#fff;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  line-height: 44px;
+}
+/*** 
+
+====================================================================
+  Sticky Menu
+====================================================================
+
+ ***/
+@keyframes menu_sticky {
+  0%   {margin-top:-120px;opacity: 0;}
+  50%  {margin-top: -64px;opacity: 0;}
+  100% {margin-top: 0;opacity: 1;}
+}
+.meditation-header.fixed {
+  position: fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.5);
+  margin:0;
+  animation-name: menu_sticky;
+  animation-duration: 0.70s;
+  animation-timing-function: ease-in-out;
+}
+.meditation-header.fixed .logo {
+  margin-top: -8px;
+}
+/*** 
+
+====================================================================
+SLIDER
+====================================================================
+
+ ***/
+ 
+ .carousel-inner .item img {
+  width: 100%;
+    height: auto%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 700px !important;
+}
+#myCarousel .nav a small, .colorednav .nav a small
+{
+    display: block;
+}
+#myCarousel .nav , .colorednav .nav
+{
+    background: #eee;
+}
+#myCarousel .carousel-caption {
+	right: 20%;
+	left: 6%;
+	padding-bottom: 30px;
+	float: left;text-shadow: none;
+	width: 32%;
+	top: 36%;
+	bottom:30%;
+} #myCarousel h3 {
+    font-size: 50px;text-align:left;
+	margin-bottom:10px;
+}
+ #myCarousel p {
+    font-size:17px;
+	color:#333;
+	text-align:left;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}.nav-justified > li > a {
+	margin-bottom: 0;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'quintessentialregular';
+	text-shadow: none;
+	text-transform:none !important;
+}
+
+#mellowsubnav > li > a {
+	margin-bottom: 0;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'quintessentialregular';
+	text-shadow: none;
+}
+.nav-pills>li.one a { background-color: #16a085; }
+.nav-pills>li.two a { background-color:#274B82; }
+.nav-pills>li.three a { background-color: #2980b9; }
+.nav-pills>li.four a { background-color: #8e44ad; }
+/*** 
+
+====================================================================
+  About section
+====================================================================
+
+ ***/
+#about-us .single-about-content {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 100px;
+}
+#about-us .icon {
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	line-height: 130px;
+	border-width: 2px;
+	font-size: 36px;
+	color: #292929;
+	text-align: center;
+	display: inline-block;
+}
+#about-us h5 a {
+  color:#292929;
+  margin: 35px 0 20px 0;
+  font-family: 'quintessentialregular';
+}
+#about-us h5 {
+	font-family: 'quintessentialregular';
+	text-transform: none;
+	font-weight: normal;
+	font-size: 28px;
+}
+#about-us .single-about-content a.more {
+  width: 130px;
+  line-height: 45px;
+  color:#292929;
+  border-width: 1px;
+  margin-top:22px;
+}
+#about-us .single-about-content a.more:hover,
+#about-us .single-about-content:hover .icon {
+  color:#fff;
+}
+.icon img {
+	width: 86px;
+	text-align: center;
+	display: inline-block;
+	margin-top: -12px;
+}
+#about-us .single-about-content a.more:hover {  background:#7A4664;
+
+}
+#about-us .single-about-content:hover .icon{ background:#F8F8F8;}
+/*** 
+
+====================================================================
+  Page Middle Banner
+====================================================================
+
+ ***/
+.cont-sec {
+	background: url(../images/middle.jpg) no-repeat center;
+	margin-top: 70px;
+	float: left;
+	width: 100%;  padding: 134px 0 137px 0;
+}
+.cont-sec .content {
+  text-align: left;  padding:30px ;
+  background:#fff;
+  border-right:5px solid #7A4664;
+
+ 
+}
+.cont-sec .content h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size:56px; text-transform:capitalize;
+  font-weight:normal;
+}
+.cont-sec .content p {
+  color:#333; font-size:15px;
+}
+.cont-sec.sec2{background: url(../images/middle2.jpg) no-repeat center;}
+.cont-sec.sec2 .content {
+  border-left:5px solid #7A4664;
+  border-right:none;
+ 
+}
+.post h6 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/*** 
+
+====================================================================
+  Blog Section
+====================================================================
+
+ ***/
+#blog-section .single-news-item .img {
+  overflow: hidden;
+  position: relative;
+}
+#blog-section .single-news-item {
+  margin-top: 55px;
+}
+#blog-section .single-news-item .img a {
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  font-size: 28px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  -webkit-transform: scale(0.2);
+     -moz-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+       -o-transform: scale(0.2);
+          transform: scale(0.2);
+}
+#blog-section .single-news-item .img a i {
+  position: relative;
+  top:50%;
+  display: block;
+  margin-top: -14px;
+}
+#blog-section .single-news-item:hover .img a {
+  opacity: 1;
+  visibility: visible;
+  border-radius: 0;
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+}
+#blog-section .single-news-item .post h6 a {
+  display: block;
+  line-height: 26px;
+  text-transform: none;
+  color:#292929;
+  margin: 40px 0 15px 0;
+}
+#blog-section .single-news-item .post>a {
+  color: #292929;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+#blog-section .single-news-item .post p a {
+  color: #292929;
+}
+/*** 
+
+====================================================================
+  CONTACT US
+====================================================================
+
+ ***/
+.addressgrid1 {
+	margin-top: 40px;
+	padding: 30px 0;
+	border-bottom:4px solid #e0e0e0;
+	border-top: 4px solid #e0e0e0;
+	float: left;
+	width: 100%;
+}#contact-section .fa {
+	font-size: 43px;
+	color: #6B61AD;
+}
+
+
+
+/*** 
+
+====================================================================
+  relaxing sound
+====================================================================
+
+ ***/
+ .audiocontrol i{
+	font-size: 50px !important;
+}
+.audioplayer{
+	height:30px;
+}
+.mellowbanner{
+	height: 650px;
+    /*max-height: 650px;*/
+    
+}
+
+

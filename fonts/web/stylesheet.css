@@ -1,0 +1,70 @@
+
+
+@font-face {
+    font-family: 'garavabold_italic';
+    src: url('garava_bold_italic.woff2') format('woff2'),
+         url('garava_bold_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavabold';
+    src: url('garava_bold.woff2') format('woff2'),
+         url('garava_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavaheavy';
+    src: url('garava_heavy.woff2') format('woff2'),
+         url('garava_heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavaitalic';
+    src: url('garava_italic.woff2') format('woff2'),
+         url('garava_italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'garavaregular';
+    src: url('garava_regular.woff2') format('woff2'),
+         url('garava_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quintessentialregular';
+    src: url('quintessential-regular.woff2') format('woff2'),
+         url('quintessential-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
