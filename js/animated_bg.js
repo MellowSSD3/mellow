@@ -25,7 +25,7 @@
 				$el.css('backgroundColor', initColor);
 				setInterval(function(){
 					var color = shiftColor();
-					$el.animate({backgroundColor: color}, 3000);
+					$el.animate({backgroundColor: color}, 5000);
 				}, settings.speed);
 			});
 		});

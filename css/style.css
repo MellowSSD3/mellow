@@ -977,7 +977,7 @@ tbody {
 ---------------------------------- */
 .footer {
 	font-size: 14px;
-	color: #999999;
+	color: #FFFFFF;
 }
 .footer h1,
 .footer h2,
@@ -985,7 +985,7 @@ tbody {
 .footer h4,
 .footer h5,
 .footer h6 {
-	color: #999999;
+	color: #FFFFFF;
 }
 .footer h2 {
 	font-size: 24px;
@@ -998,7 +998,7 @@ tbody {
 .light .footer h4,
 .light .footer h5,
 .light .footer h6 {
-	color: #666;
+	color: #FFFFFF;
 }
 
 /* Subfooter
@@ -2115,7 +2115,7 @@ fieldset[disabled] .btn-default {
 	border-color: #fafafa;
 }
 .footer-content .btn-white {
-	color: #999;
+	color: #FFFFFF;
 	background-color: transparent;
 	border-color: #555;
 }
@@ -2159,7 +2159,7 @@ textarea {
 	height: 40px;
 	padding-right: 30px;
 	border-color: #acacac;
-	color: #666666;
+	color: #FFFFFF;
 	position: relative;
 	-webkit-appearance: none;
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
@@ -2715,7 +2715,7 @@ ul.pagination li > a:focus {
 .footer-content .nav-pills > li > a {
 	padding: 4px 0px;
 	border-color: transparent;
-	color: #999;
+	color: #FFFFFF;
 	font-weight: 400;
 }
 .footer-content .nav-pills > li:last-child > a {
@@ -2724,7 +2724,7 @@ ul.pagination li > a:focus {
 .footer-content .nav-pills > li.active > a,
 .footer-content .nav-pills > li.active > a:focus,
 .footer-content .nav-pills > li > a:focus {
-	color: #999;
+	color: #FFFFFF;
 	background-color: transparent;
 	border-color: transparent;
 }
