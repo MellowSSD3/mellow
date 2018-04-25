@@ -179,5 +179,27 @@ $('.animated_bg2').animatedBG({
         document.getElementById("howworkvideo").pause();
     });
 
+    $("#YahyaHowItWorks").on('show.bs.modal', function () {
+        document.getElementById("howworkvideoYahya").play();
+    });
+    $("#YahyaHowItWorks").on('hide.bs.modal', function () {
+        document.getElementById("howworkvideoYahya").pause();
+    });
+
+    $("#FazHowItWorks").on('show.bs.modal', function () {
+        document.getElementById("howworkvideoFaz").play();
+    });
+    $("#FazHowItWorks").on('hide.bs.modal', function () {
+        document.getElementById("howworkvideoFaz").pause();
+    });
+
+    $("#RubelHowItWorks").on('show.bs.modal', function () {
+        document.getElementById("howworkvideoRub").play();
+    });
+
+    $("#RubelHowItWorks").on('hide.bs.modal', function () {
+        document.getElementById("howworkvideoRub").pause();
+    });
+
     $("#Disclaimer").modal("show");
 });
